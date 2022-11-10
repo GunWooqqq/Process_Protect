@@ -48,17 +48,17 @@ void Process_Protect()
 				}
 			}while(Process32Next(De.hSnap,&De.pe));
 			if(De.exist != 1){
-				MessageBox(NULL,"гь╢Г га╥н╪╪╫╨╟║ а╬╥А╣г╬З╫ю╢о╢ы юГ╫ггЮ го╟з╫ю╢о╢ы.","га╥н╪╪╫╨ а╬╥А е╫аЖ",MB_OK);
+				MessageBox(NULL,"О©╫ь╢О©╫ О©╫О©╫О©╫н╪О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫г╬О©╫О©╫О©╫О©╫о╢О©╫ О©╫О©╫О©╫О©╫О©╫ О©╫о╟з╫О©╫О©╫о╢О©╫.","О©╫О©╫О©╫н╪О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ е╫О©╫О©╫",MB_OK);
 				ShellExecute(NULL ,"open",De.pPath ,NULL ,NULL ,SW_SHOW);
 			}
 			else{
-				MessageBox(NULL ,"гь╢Г га╥н╪╪╫╨╢б гЖюГ ╫ггЮаъют╢о╢ы." ,"га╥н╪╪╫╨ ╫ггЮаъ" , MB_OK);
+				MessageBox(NULL ,"О©╫ь╢О©╫ О©╫О©╫О©╫н╪О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫О©╫т╢о╢О©╫." ,"О©╫О©╫О©╫н╪О©╫О©╫О©╫ О©╫О©╫О©╫О©╫О©╫О©╫" , MB_OK);
 				continue;
 			}
 		}
 }
 
-void Process_Kill()	//ф╞а╓ га╥н╪╪╫╨ ╟╜а╕ а╬╥А 
+void Process_Kill()	//ф╞О©╫О©╫ О©╫О©╫О©╫н╪О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫ 
 {
 	PROCESSENTRY32 pe;
 	HANDLE tHandle;
@@ -79,7 +79,7 @@ void Process_Kill()	//ф╞а╓ га╥н╪╪╫╨ ╟╜а╕ а╬╥А
 	{
 		printf("Process Name  :  %s\n\n", pe.szExeFile);
 	}while(Process32Next(hProcess , &pe));
-	//╩Г©Кюз©║╟т га╥н╪╪╫╨ гя╧Ь бъ ╨╦©╘аж╢б ©К╣╣ ╥Гф╬ 
+	//О©╫О©╫О©╫О©╫з©О©╫О©╫О©╫ О©╫О©╫О©╫н╪О©╫О©╫О©╫ О©╫я╧О©╫ О©╫О©╫ О©╫О©╫О©╫О©╫О©╫ж╢О©╫ О©╫К╣╣ О©╫О©╫ф╬ 
 	printf("\n\n\n");
 	printf("Kill Process Name : ");
 	gets(buffer);
@@ -102,5 +102,4 @@ void Process_Kill()	//ф╞а╓ га╥н╪╪╫╨ ╟╜а╕ а╬╥А
 		}
 	}while(Process32Next(hProcess , &pe));
 }
-
-
+// Лё╪Л└² Л╤■Й╟─ 
